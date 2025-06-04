@@ -1,0 +1,18 @@
+<div>
+        <h1>Tienda Online</h1>
+    
+    <div>
+        <ul>
+            @for(producto of inventario; track producto.descripcion){
+                <li>{{producto.descripcion}},{{producto.precio}}</li>
+            }
+        </ul>
+    </div>
+
+    <div>
+        <h3>Agregar un producto nuevo</h3>
+        <input placeholder="Nombre del producto" #descInput>
+        <input placeholder="Precio del producto" #priceInput>
+        <button>Agregar</button>
+    </div>
+</div>
