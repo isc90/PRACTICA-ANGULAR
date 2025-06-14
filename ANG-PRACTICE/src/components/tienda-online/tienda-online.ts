@@ -16,8 +16,9 @@ export class TiendaOnline {
  inventario:Array<Producto> = [this.mac,this.iphone];
 
 
- addProduct(prod:Producto):void{
-  
+ addProduct(prodName:string,price:string):void{
+    const prod = new Producto(prodName,Number(price));
+    this.inventario.push(prod)
  }
 }
 

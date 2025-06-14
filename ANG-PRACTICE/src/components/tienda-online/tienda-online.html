@@ -13,6 +13,6 @@
         <h3>Agregar un producto nuevo</h3>
         <input placeholder="Nombre del producto" #descInput>
         <input placeholder="Precio del producto" #priceInput>
-        <button>Agregar</button>
+        <button (click)="addProduct(descInput.value,priceInput.value); descInput.value=''; priceInput.value=''">Agregar</button>
     </div>
 </div>
