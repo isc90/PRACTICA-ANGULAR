@@ -9,6 +9,10 @@ import { ComponenteHijo } from './componente-hijo/componente-hijo';
 })
 export class ComponentePadre {
 
-  mensajePadre:string = "YA LLEGO SU PAPA HIJOS DE SU PUTA MADRE!";
+  mensaje:string ='';
+
+  recibirNotificacion(mensaje:string){
+    this.mensaje = mensaje;
+  }
 
 }

@@ -12,7 +12,7 @@
     <div class="mt-3 w-50 mx-auto d-flex flex-column">
         <h3>Agregar un producto nuevo</h3>
 
-        <div class="mt-3 w-50 mx-auto d-flex ">
+        <div class="mt-3 w-50 mx-auto d-flex">
             <input placeholder="Nombre del producto" #descInput class="">
             <input placeholder="Precio del producto" #priceInput>
             <button (click)="addProduct(descInput.value,priceInput.value); descInput.value=''; priceInput.value=''">Agregar</button>
