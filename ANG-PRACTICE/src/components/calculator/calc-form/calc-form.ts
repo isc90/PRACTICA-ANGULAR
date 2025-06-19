@@ -18,6 +18,9 @@ export class CalcForm {
     if(this.operandoA && this.operandoB){
       const resultado = Number(this.operandoA) + Number(this.operandoB);
       this.sumar.emit(resultado);
+
+      this.operandoA = null;
+      this.operandoB = null;
     }
   }
 }
