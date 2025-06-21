@@ -1,0 +1,12 @@
+<div>
+    <h2>Mensaje</h2>
+    <div>
+        <p>Tu mensaje es: {{mensaje}}</p>
+    </div>
+
+    <hr>
+    <p>Linea parental</p>
+    <div>
+        <app-mensaje-hijo (enviarMensaje)="recibirMensaje($event)"></app-mensaje-hijo>
+    </div>
+</div>
